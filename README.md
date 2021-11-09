@@ -1,9 +1,9 @@
-README for Embedded Systems Lab 1: Button Blink
+README for Embedded Systems Lab 5: Timers and PWMs
 
 Author: Kyle Rettig
-Created: September 21, 2018
+Created: November 9, 2021
 Latest Update: Initial Commit
-Description: Using the MSP430G2 and MSP432 embedded systems, toggles an LED on the press of a button.
+Description: Using the MSP430G2 embedded system, control LEDs using interrupts and PWMs
 _______________________________________________________________________________________________________________________________________
 FILES REQUIRED:
 msp430.h
