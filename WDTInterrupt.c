@@ -6,7 +6,8 @@
 int main(void)
 {
 	BCSCTL2 |= DIVS_3; //Use SMCLK (initial frequency of 1MHZ), 1MHZ/8 = 125KHz
-	WDTCTL = WDT_MDLY_32; //Set Timer Interrupt 32ms, WDTPW+WDTTMSEL+WDTCNTCL
+			   //Desired clock to be 1/256ms = 3.9KHz
+	WDTCTL = WDT_MDLY_32; //125k/3.9k = 32.05 == WDT_MDLY_32 WDTPW+WDTTMSEL+WDTCNTCL
 	IE1 |= WDTIE; //Enable WDT interrupt
 
 	P1DIR = 0x41; //Set both LEDs as outputs
